@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
             emoteLearned.Add(emotes[k].tag, false);
         }
 
+        canMove = true;
     }
 
     void Update()

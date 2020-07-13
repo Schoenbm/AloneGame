@@ -99,17 +99,17 @@ public class Player : MonoBehaviour
         }
         canMove = true;
         GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);
-        if (activePnj != null)
-            Debug.Log("emote Sent");
-            activePnj.answer(this, this.emotesDict[pString]);
-        StartCoroutine(Wait(emote));
+        StartCoroutine(Wait(emote,pString));
     }
 
-    private IEnumerator Wait(GameObject pEmote)
+    private IEnumerator Wait(GameObject pEmote, string pString)
     {
         yield return new WaitForSeconds(timeEmote);
         Destroy(pEmote);
         this.canMove = true;
+        if (activePnj != null)
+            Debug.Log("emote Sent");
+        activePnj.answer(this, this.emotesDict[pString]);
     }
 
     public void learn(string pTag)

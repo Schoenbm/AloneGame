@@ -681,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169571195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.304, y: 0.065, z: 0}
+  m_LocalPosition: {x: -0.458, y: 0.097, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 351069620}
@@ -1619,7 +1619,8 @@ PrefabInstance:
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: goodEmote
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
+        type: 3}
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: badEmote
       value: 
@@ -1847,11 +1848,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodAnswer: question
+  goodAnswer: gear
   goodEmote: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
     type: 3}
-  badEmote: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
-    type: 3}
+  badEmote: {fileID: 0}
   dialogueBox: {fileID: 2076340715}
   timeEmote: 3
   isGirl: 0

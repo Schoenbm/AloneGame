@@ -117,15 +117,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   emotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537, type: 3}
+  - {fileID: 7917923768148658433, guid: 175a91c504cb7d94bac1128e0517140f, type: 3}
+  - {fileID: 6085700630139845890, guid: ec2f302535334e34891f16472c26cf4a, type: 3}
+  - {fileID: 8031498411038072522, guid: 45dfa06d2f790ba4782f928e4953257f, type: 3}
+  - {fileID: 621008201438225936, guid: fdec4e10ea2af5a41bde35f1f234b3d8, type: 3}
+  - {fileID: 1276587797677504215, guid: 029cf388a352e6242aa8efc76472f46e, type: 3}
+  - {fileID: 419487335003739686, guid: 51a0749ccb0333d4986f42ba6e0c4ffa, type: 3}
+  - {fileID: 1946345682227257630, guid: aaa0220ff9d433347911016f080f5052, type: 3}
+  - {fileID: 2414876604558330174, guid: 8f9ae14efdb498040bfc071904586add, type: 3}
 --- !u!61 &7426463965011185063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7492903497111333309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5735548569938049550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: 0.19, z: -7.6884}
+  m_LocalPosition: {x: -0.38, y: 0.19, z: -7.6884}
   m_LocalScale: {x: 0.99311405, y: 1.0000242, z: 1}
   m_Children: []
   m_Father: {fileID: 6975040378325733559}

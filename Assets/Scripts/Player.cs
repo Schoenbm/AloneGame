@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void sendEmote(string pString)
+    public void sendEmote(string pString)
     {
         canMove = true;
         GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);

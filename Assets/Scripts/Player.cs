@@ -20,8 +20,8 @@ public class Player : MonoBehaviour
     public Button[] buttons;
     public GameObject[] Emotes;
 
-    private Dictionary <string,bool>EmoteLearned;
-    private Dictionary <string,Button> buttonsDict;
+    private Dictionary<string, bool> EmoteLearned = new Dictionary<string, bool>();
+    private Dictionary<string, Button> buttonsDict = new Dictionary<string, Button>();
 
     // Update is called once per frame
     private void Start()

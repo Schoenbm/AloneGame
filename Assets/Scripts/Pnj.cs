@@ -17,9 +17,11 @@ public class Pnj : MonoBehaviour
 
     public void answer(Player pPlayer, GameObject pEmote)
     {
+        Debug.Log("Emote Received");
         string pString = pEmote.tag;
         if (pString.Equals(goodAnswer))
         {
+            Debug.Log("GoodEmote");
             if (isGirl)
             { //endscript
             }
@@ -28,6 +30,7 @@ public class Pnj : MonoBehaviour
         }
         else
         {
+            Debug.Log("BadEmote");
             if (isGirl)
                 emote = GameObject.Instantiate(pEmote, this.dialogueBox.transform);
             if(badEmote != null)

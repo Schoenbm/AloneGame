@@ -99,8 +99,8 @@ public class Player : MonoBehaviour
         }
         canMove = true;
         GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);
-        Debug.Log(emote);
-        if(activePnj != null)
+        if (activePnj != null)
+            Debug.Log("emote Sent");
             activePnj.answer(this, this.emotesDict[pString]);
         StartCoroutine(Wait(emote));
     }
@@ -123,6 +123,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if(collision.gameObject.GetComponent<Pnj>() != null)
             activePnj = collision.gameObject.GetComponent<Pnj>();
     }

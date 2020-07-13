@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     private bool canMove = true;
 
     private Dictionary <string,bool>EmoteLearned;
-    private Dictionary <string,Button> buttons;
+    private Dictionary <string,Button> buttonsDict;
 
     // Update is called once per frame
     private void Start()
@@ -26,8 +26,8 @@ public class Player : MonoBehaviour
         // Active les bouttons en fonctions de ceux appris de base
         foreach (KeyValuePair<string,bool> kvp in EmoteLearned)
         {
-            buttons[kvp.Key].enabled = false;
-            buttons[kvp.Key].tag = kvp.Key;
+            buttonsDict[kvp.Key].enabled = false;
+            buttonsDict[kvp.Key].tag = kvp.Key;
         }
     }
 
@@ -60,8 +60,8 @@ public class Player : MonoBehaviour
             {
                 foreach (KeyValuePair<string, bool> kvp in EmoteLearned)
                 {
-                    buttons[kvp.Key].enabled = kvp.Value;
-                    buttons[kvp.Key].tag = kvp.Key;
+                    buttonsDict[kvp.Key].enabled = kvp.Value;
+                    buttonsDict[kvp.Key].tag = kvp.Key;
                 }
                 canMove = false;
             }
@@ -72,8 +72,8 @@ public class Player : MonoBehaviour
             {
                 foreach (KeyValuePair<string, bool> kvp in EmoteLearned)
                 {
-                    buttons[kvp.Key].enabled = false;
-                    buttons[kvp.Key].tag = kvp.Key;
+                    buttonsDict[kvp.Key].enabled = false;
+                    buttonsDict[kvp.Key].tag = kvp.Key;
                 }
                 canMove = true;
             }
@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
         if(!EmoteLearned[pTag])
         {
             EmoteLearned[pTag] = true;
-            buttons[pTag].enabled = true;
+            buttonsDict[pTag].enabled = true;
         }
     }
 

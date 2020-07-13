@@ -27,10 +27,13 @@ public class Player : MonoBehaviour
     private Dictionary<string, GameObject> emotesDict = new Dictionary<string, GameObject>();
 
     private int currentButton;
+    public Cursor activeCursor;
 
     // Update is called once per frame
     private void Start()
     {
+        activeCursor.gameObject.SetActive(false);
+
         buttons[0].gameObject.SetActive(false);
         buttonsDict.Add(emotes[0].tag, buttons[0]);
         emoteLearned.Add(emotes[0].tag, true);
@@ -75,7 +78,9 @@ public class Player : MonoBehaviour
 
             if (Input.GetAxis("Submit") >0)
             {
+                activeCursor.gameObject.SetActive(true);
                 currentButton = 0;
+                this.activeCursor.changePosition(this.buttons[currentButton].gameObject);
                 rb.velocity = new Vector2(0,0);
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
@@ -98,6 +103,7 @@ public class Player : MonoBehaviour
                         break;
                     }
                 }
+                this.activeCursor.changePosition(this.buttons[currentButton].gameObject);
             }
             else if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
             {
@@ -110,11 +116,13 @@ public class Player : MonoBehaviour
                         break;
                     }
                 }
+                this.activeCursor.changePosition(this.buttons[currentButton].gameObject);
             }
 
 
             if (Input.GetAxis("Cancel") > 0)
             {
+                activeCursor.gameObject.SetActive(false);
                 EventSystem.current.SetSelectedGameObject(null);
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
@@ -129,6 +137,7 @@ public class Player : MonoBehaviour
 
     public void sendEmote(string pString)
     {
+        activeCursor.gameObject.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
         foreach (KeyValuePair<string, bool> kvp in emoteLearned)
         {

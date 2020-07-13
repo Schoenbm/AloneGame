@@ -29,9 +29,11 @@ public class Player : MonoBehaviour
     {
         buttonsDict.Add(emotes[0].tag, buttons[0]);
         emoteLearned.Add(emotes[0].tag, true);
+        buttons[0].enabled = false;
 
         for (int k = 1; k< buttons.Length; k++)
         {
+            buttons[k].enabled = false;
             buttonsDict.Add(emotes[k].tag, buttons[k]);
             emoteLearned.Add(emotes[k].tag, false);
         }

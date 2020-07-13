@@ -6,8 +6,16 @@ public class CameraTransform : MonoBehaviour
 {
     public Transform playerTransform;
 
+    private bool blocked;
+
     void Update()
     {
-        this.transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y, -10);
+        if(!blocked)
+            this.transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y, -10);
+    }
+
+    public void setBlocked(bool pBool)
+    {
+        blocked = pBool;
     }
 }

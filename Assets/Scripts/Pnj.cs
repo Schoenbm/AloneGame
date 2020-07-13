@@ -23,7 +23,10 @@ public class Pnj : MonoBehaviour
         {
             Debug.Log("GoodEmote");
             if (isGirl)
-            { //endscript
+            {
+                pPlayer.setCanMove(false);
+                pPlayer.GetComponent<CameraTransform>().setBlocked(false);
+                this.GetComponent<EndGame>().End();
             }
             if (goodEmote != null)
                 emote = GameObject.Instantiate(goodEmote, this.dialogueBox.transform);

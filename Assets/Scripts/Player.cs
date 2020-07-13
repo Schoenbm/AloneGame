@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject dialogueBox;
     public Pnj activePnj;
-
+    public CameraTransform cameraTransform;
 
     private bool canMove = true;
 
@@ -141,5 +141,10 @@ public class Player : MonoBehaviour
             activePnj.transform.localScale = activePnj.transform.localScale / 1.1f;
             activePnj = null;
         }
+    }
+
+    public void setCanMove(bool pBool)
+    {
+        this.canMove = pBool;
     }
 }

@@ -5,16 +5,18 @@ using UnityEngine;
 public class EndGame : MonoBehaviour
 {
     public GameObject redHeartEmote;
+    public GameObject heartEmote;
     public GameObject dialogueBox;
     public float timeBeforeRed;
     public float timeEmotePlayer;
     public float timeEmoteGirl;
     public float timeBetweenEmote;
     public float timeBeforeBothEmotes;
-    public Rigidbody girlRb;
+    public Rigidbody2D girlRb;
     public float speed;
 
-    public void End(Player pPlayer)
+
+    public void Ending(Player pPlayer)
     {
         StartCoroutine(Emotes(pPlayer));
     }
@@ -23,6 +25,11 @@ public class EndGame : MonoBehaviour
     private IEnumerator Emotes(Player pPlayer)
     {
         GameObject emote;
+
+        emote = GameObject.Instantiate(heartEmote, this.dialogueBox.transform);
+        yield return new WaitForSeconds(timeEmoteGirl);
+        Destroy(emote);
+
         yield return new WaitForSeconds(timeBeforeRed);
 
         emote = GameObject.Instantiate(redHeartEmote, pPlayer.dialogueBox.transform);
@@ -39,6 +46,8 @@ public class EndGame : MonoBehaviour
 
         GameObject.Instantiate(redHeartEmote, this.dialogueBox.transform);
         GameObject.Instantiate(redHeartEmote, pPlayer.dialogueBox.transform);
+
+
         pPlayer.rb.velocity = new Vector2(speed,0);
         girlRb.velocity = new Vector2(speed,0);
 

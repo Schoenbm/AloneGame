@@ -25,10 +25,10 @@ public class Pnj : MonoBehaviour
             if (isGirl)
             {
                 pPlayer.setCanMove(false);
-                pPlayer.GetComponent<CameraTransform>().setBlocked(false);
-                this.GetComponent<EndGame>().End();
+                //pPlayer.GetComponent<CameraTransform>().setBlocked(false);
+                this.GetComponent<EndGame>().Ending(pPlayer);
             }
-            if (goodEmote != null)
+            else if (goodEmote != null)
                 emote = GameObject.Instantiate(goodEmote, this.dialogueBox.transform);
         }
         else
@@ -36,7 +36,7 @@ public class Pnj : MonoBehaviour
             Debug.Log("BadEmote");
             if (isGirl)
                 emote = GameObject.Instantiate(pEmote, this.dialogueBox.transform);
-            if(badEmote != null)
+            else if(badEmote != null)
                 emote = GameObject.Instantiate(badEmote, this.dialogueBox.transform);
         }
 

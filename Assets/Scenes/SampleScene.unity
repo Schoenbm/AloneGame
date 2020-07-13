@@ -2230,69 +2230,10 @@ PrefabInstance:
       propertyPath: buttons.Array.data[8]
       value: 
       objectReference: {fileID: 23201457}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[0]
-      value: 
-      objectReference: {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[1]
-      value: 
-      objectReference: {fileID: 7917923768148658433, guid: 175a91c504cb7d94bac1128e0517140f,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[2]
-      value: 
-      objectReference: {fileID: 6085700630139845890, guid: ec2f302535334e34891f16472c26cf4a,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[3]
-      value: 
-      objectReference: {fileID: 8031498411038072522, guid: 45dfa06d2f790ba4782f928e4953257f,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[4]
-      value: 
-      objectReference: {fileID: 621008201438225936, guid: fdec4e10ea2af5a41bde35f1f234b3d8,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[5]
-      value: 
-      objectReference: {fileID: 1276587797677504215, guid: 029cf388a352e6242aa8efc76472f46e,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[6]
-      value: 
-      objectReference: {fileID: 419487335003739686, guid: 51a0749ccb0333d4986f42ba6e0c4ffa,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[7]
-      value: 
-      objectReference: {fileID: 1946345682227257630, guid: aaa0220ff9d433347911016f080f5052,
-        type: 3}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: emotes.Array.data[8]
-      value: 
-      objectReference: {fileID: 2414876604558330174, guid: 8f9ae14efdb498040bfc071904586add,
-        type: 3}
     - target: {fileID: 4951591746744080004, guid: 5e0e355b74f062840a1c7b80bbe3193e,
         type: 3}
       propertyPath: m_Name
       value: Ghost
-      objectReference: {fileID: 0}
-    - target: {fileID: 6527053514684285241, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6975040378325733559, guid: 5e0e355b74f062840a1c7b80bbe3193e,
         type: 3}
@@ -2731,6 +2672,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 689564734359064057, guid: c5876daa6ce377a4bb950bd28f3c4947,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.026999593
+      objectReference: {fileID: 0}
+    - target: {fileID: 689564734359064057, guid: c5876daa6ce377a4bb950bd28f3c4947,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.40600324
+      objectReference: {fileID: 0}
+    - target: {fileID: 689564734359064057, guid: c5876daa6ce377a4bb950bd28f3c4947,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.058499336
+      objectReference: {fileID: 0}
+    - target: {fileID: 689564734359064057, guid: c5876daa6ce377a4bb950bd28f3c4947,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5230013
+      objectReference: {fileID: 0}
     - target: {fileID: 7304728587758099222, guid: c5876daa6ce377a4bb950bd28f3c4947,
         type: 3}
       propertyPath: m_Name

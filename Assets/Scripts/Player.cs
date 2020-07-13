@@ -27,15 +27,17 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        buttons[0].gameObject.SetActive(false);
         buttonsDict.Add(emotes[0].tag, buttons[0]);
         emoteLearned.Add(emotes[0].tag, true);
-        buttons[0].enabled = false;
+        emotesDict[emotes[0].tag] = emotes[0];
 
         for (int k = 1; k< buttons.Length; k++)
         {
-            buttons[k].enabled = false;
+            buttons[k].gameObject.SetActive(false);
             buttonsDict.Add(emotes[k].tag, buttons[k]);
             emoteLearned.Add(emotes[k].tag, false);
+            emotesDict[emotes[k].tag] = emotes[k];
         }
 
         canMove = true;
@@ -68,10 +70,10 @@ public class Player : MonoBehaviour
 
             if (Input.GetAxis("Submit") >0)
             {
+                rb.velocity = new Vector2(0,0);
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
-                    buttonsDict[kvp.Key].enabled = kvp.Value;
-                    buttonsDict[kvp.Key].tag = kvp.Key;
+                    buttonsDict[kvp.Key].gameObject.SetActive(kvp.Value);
                 }
                 canMove = false;
             }
@@ -82,8 +84,7 @@ public class Player : MonoBehaviour
             {
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
-                    buttonsDict[kvp.Key].enabled = false;
-                    buttonsDict[kvp.Key].tag = kvp.Key;
+                    buttonsDict[kvp.Key].gameObject.SetActive(false);
                 }
                 canMove = true;
             }
@@ -92,8 +93,13 @@ public class Player : MonoBehaviour
 
     public void sendEmote(string pString)
     {
+        foreach (KeyValuePair<string, bool> kvp in emoteLearned)
+        {
+            buttonsDict[kvp.Key].gameObject.SetActive(false);
+        }
         canMove = true;
         GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);
+        Debug.Log(emote);
         if(activePnj != null)
             activePnj.answer(this, this.emotesDict[pString]);
         StartCoroutine(Wait(emote));

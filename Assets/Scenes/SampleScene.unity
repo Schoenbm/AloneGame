@@ -671,8 +671,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.62789834, g: 0.6415094, b: 0.38430044, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1692,6 +1692,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2414876604558330174, guid: 8f9ae14efdb498040bfc071904586add,
         type: 3}
+    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
+        type: 3}
+      propertyPath: timeEmote
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4951591746744080004, guid: 5e0e355b74f062840a1c7b80bbe3193e,
         type: 3}
       propertyPath: m_Name
@@ -1898,30 +1903,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5876daa6ce377a4bb950bd28f3c4947, type: 3}
---- !u!1 &7269134438255912790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7304728587758099222, guid: c5876daa6ce377a4bb950bd28f3c4947,
-    type: 3}
-  m_PrefabInstance: {fileID: 7269134438255912789}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7269134438255912791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7269134438255912790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
-  isGirl: 0
 --- !u!1001 &7830414772352678340
 PrefabInstance:
   m_ObjectHideFlags: 0

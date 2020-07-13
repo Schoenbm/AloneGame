@@ -108,8 +108,7 @@ public class Player : MonoBehaviour
         Destroy(pEmote);
         this.canMove = true;
         if (activePnj != null)
-            Debug.Log("emote Sent");
-        activePnj.answer(this, this.emotesDict[pString]);
+            activePnj.answer(this, this.emotesDict[pString]);
     }
 
     public void learn(string pTag)

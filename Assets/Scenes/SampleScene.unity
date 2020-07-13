@@ -681,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169571195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.317, y: 0.046, z: 0}
+  m_LocalPosition: {x: -0.304, y: 0.065, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 351069620}
@@ -1619,8 +1619,7 @@ PrefabInstance:
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: goodEmote
       value: 
-      objectReference: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: badEmote
       value: 
@@ -1629,6 +1628,10 @@ PrefabInstance:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 169571195}
+    - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
+      propertyPath: goodAnswer
+      value: gear
+      objectReference: {fileID: 0}
     - target: {fileID: 552081844626411282, guid: c925dac42a8f37846a3f9e2531fc4f13,
         type: 3}
       propertyPath: m_FlipX
@@ -1832,6 +1835,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12783289, y: 0.16023093}
   m_EdgeRadius: 0
+--- !u!114 &1272427098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272427096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodAnswer: question
+  goodEmote: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
+    type: 3}
+  badEmote: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
+    type: 3}
+  dialogueBox: {fileID: 2076340715}
+  timeEmote: 3
+  isGirl: 0
 --- !u!1 &1301042100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,12 +2526,12 @@ PrefabInstance:
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: goodEmote
       value: 
-      objectReference: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
+      objectReference: {fileID: 4130210089299901734, guid: 98229ae5883a6d84884fa0893a0f5b6b,
         type: 3}
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: badEmote
       value: 
-      objectReference: {fileID: 2651693306490701380, guid: 366d103cd85fcdd46b91ab1f9b826161,
+      objectReference: {fileID: 4130210089299901734, guid: 98229ae5883a6d84884fa0893a0f5b6b,
         type: 3}
     - target: {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
       propertyPath: dialogueBox
@@ -2578,7 +2601,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1122417278, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c925dac42a8f37846a3f9e2531fc4f13, type: 3}
 --- !u!1 &2007447052 stripped
 GameObject:
@@ -2662,7 +2686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076340715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.272, y: 0.089, z: 0}
+  m_LocalPosition: {x: 0.28, y: 0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 199477887}
@@ -2729,6 +2753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412413975091938785, guid: 69f58e98374e2c1488d175024b416116,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7635444216478351402, guid: 69f58e98374e2c1488d175024b416116,
         type: 3}

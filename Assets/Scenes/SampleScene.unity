@@ -746,12 +746,12 @@ PrefabInstance:
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.118
+      value: 5.1209
       objectReference: {fileID: 0}
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.337
+      value: -0.4162
       objectReference: {fileID: 0}
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
@@ -801,12 +801,12 @@ PrefabInstance:
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.99178
+      value: 1.7916061
       objectReference: {fileID: 0}
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.99178
+      value: 1.7631055
       objectReference: {fileID: 0}
     - target: {fileID: 1259533911495516021, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
@@ -816,7 +816,7 @@ PrefabInstance:
     - target: {fileID: 1259533911495516023, guid: eeaba9d31b004124e8f935cade316670,
         type: 3}
       propertyPath: m_Name
-      value: train (1)
+      value: littletrain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeaba9d31b004124e8f935cade316670, type: 3}
@@ -1256,24 +1256,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 355170623}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &590132180
-MonoBehaviour:
+--- !u!61 &590132180
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590132179}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
-  isGirl: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!114 &640256893 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
@@ -2405,7 +2413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608067222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.347, y: 0.145, z: 0}
+  m_LocalPosition: {x: -0.361, y: 0.198, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1322267794}
@@ -2747,7 +2755,7 @@ PrefabInstance:
     - target: {fileID: 7565261149038524751, guid: 74886841f1ac79140b64f598529cef82,
         type: 3}
       propertyPath: m_Name
-      value: player_right
+      value: babyghost
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74886841f1ac79140b64f598529cef82, type: 3}
@@ -3745,12 +3753,12 @@ PrefabInstance:
     - target: {fileID: 4476657657804126312, guid: b28554147e59a9243849359e1dbe27a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.63
+      value: 5.612
       objectReference: {fileID: 0}
     - target: {fileID: 4476657657804126312, guid: b28554147e59a9243849359e1dbe27a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.092
+      value: 0.031
       objectReference: {fileID: 0}
     - target: {fileID: 4476657657804126312, guid: b28554147e59a9243849359e1dbe27a7,
         type: 3}

@@ -2035,12 +2035,12 @@ PrefabInstance:
     - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.51
+      value: 13.421
       objectReference: {fileID: 0}
     - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35
+      value: -0.276
       objectReference: {fileID: 0}
     - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
         type: 3}
@@ -2086,6 +2086,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141413495471317644, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3472
       objectReference: {fileID: 0}
     - target: {fileID: 7701510715108180489, guid: bbcb390e1a1fc0e4e86f46cd2f85a235,
         type: 3}
@@ -2347,12 +2362,12 @@ PrefabInstance:
     - target: {fileID: 2217356532588537846, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.28
+      value: 12.877
       objectReference: {fileID: 0}
     - target: {fileID: 2217356532588537846, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.38
+      value: -0.406
       objectReference: {fileID: 0}
     - target: {fileID: 2217356532588537846, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
         type: 3}
@@ -2403,6 +2418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: female_ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983190408425965622, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9430feeaf28a1d14ba7aaf6d9243701b, type: 3}

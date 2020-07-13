@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     public CameraTransform cameraTransform;
 
     private bool canMove = true;
+    private bool inMenu = false;
 
     public Button[] buttons;
     public GameObject[] emotes;
@@ -23,6 +25,8 @@ public class Player : MonoBehaviour
     private Dictionary<string, bool> emoteLearned = new Dictionary<string, bool>();
     private Dictionary<string, Button> buttonsDict = new Dictionary<string, Button>();
     private Dictionary<string, GameObject> emotesDict = new Dictionary<string, GameObject>();
+
+    private int currentButton;
 
     // Update is called once per frame
     private void Start()
@@ -41,6 +45,7 @@ public class Player : MonoBehaviour
         }
 
         canMove = true;
+        inMenu = false;
     }
 
     void Update()
@@ -70,34 +75,66 @@ public class Player : MonoBehaviour
 
             if (Input.GetAxis("Submit") >0)
             {
+                currentButton = 0;
                 rb.velocity = new Vector2(0,0);
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
                     buttonsDict[kvp.Key].gameObject.SetActive(kvp.Value);
                 }
+                EventSystem.current.SetSelectedGameObject(this.buttons[0].gameObject);
                 canMove = false;
+                inMenu = true;
             }
         }
-        else
+        else if (inMenu) // IF IT CANNOT MOVE
         {
-            if(Input.GetAxis("Cancel") > 0)
+            if(Input.GetKeyDown("left") || Input.GetKeyDown("q"))
             {
+                for(int i = currentButton - 1; i >= 0; i--)
+                {
+                    if (buttons[i].gameObject.activeSelf) {
+                        EventSystem.current.SetSelectedGameObject(this.buttons[i].gameObject);
+                        currentButton = i;
+                        break;
+                    }
+                }
+            }
+            else if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
+            {
+                for (int i = currentButton + 1; i < buttons.Length; i++)
+                {
+                    if (buttons[i].gameObject.activeSelf)
+                    {
+                        EventSystem.current.SetSelectedGameObject(this.buttons[i].gameObject);
+                        currentButton = i;
+                        break;
+                    }
+                }
+            }
+
+
+            if (Input.GetAxis("Cancel") > 0)
+            {
+                EventSystem.current.SetSelectedGameObject(null);
                 foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
                     buttonsDict[kvp.Key].gameObject.SetActive(false);
                 }
                 canMove = true;
+                inMenu = false;
+
             }
         }
-    }
+    } // UPDATE ---------------------------
 
     public void sendEmote(string pString)
     {
+        EventSystem.current.SetSelectedGameObject(null);
         foreach (KeyValuePair<string, bool> kvp in emoteLearned)
         {
             buttonsDict[kvp.Key].gameObject.SetActive(false);
         }
-        canMove = true;
+        inMenu = false;
         GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);
         StartCoroutine(Wait(emote,pString));
     }
@@ -108,8 +145,7 @@ public class Player : MonoBehaviour
         Destroy(pEmote);
         this.canMove = true;
         if (activePnj != null)
-            Debug.Log("emote Sent");
-        activePnj.answer(this, this.emotesDict[pString]);
+            activePnj.answer(this, this.emotesDict[pString]);
     }
 
     public void learn(string pTag)

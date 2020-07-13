@@ -25,7 +25,7 @@ public class Pnj : MonoBehaviour
             if (isGirl)
             {
                 pPlayer.setCanMove(false);
-                //pPlayer.GetComponent<CameraTransform>().setBlocked(false);
+                pPlayer.cameraTransform.setBlocked(true);
                 this.GetComponent<EndGame>().Ending(pPlayer);
             }
             else if (goodEmote != null)

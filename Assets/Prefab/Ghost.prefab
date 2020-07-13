@@ -101,11 +101,12 @@ MonoBehaviour:
   verticalFall: 0.1
   horizontalSpeed: 1
   verticalSpeed: 1
-  maxY: 1
+  maxY: 1.2
   timeEmote: 2
   rb: {fileID: 6527053514684285241}
   dialogueBox: {fileID: 5735548569938049550}
   activePnj: {fileID: 0}
+  cameraTransform: {fileID: 0}
   buttons:
   - {fileID: 0}
   - {fileID: 0}
@@ -126,6 +127,7 @@ MonoBehaviour:
   - {fileID: 419487335003739686, guid: 51a0749ccb0333d4986f42ba6e0c4ffa, type: 3}
   - {fileID: 1946345682227257630, guid: aaa0220ff9d433347911016f080f5052, type: 3}
   - {fileID: 2414876604558330174, guid: 8f9ae14efdb498040bfc071904586add, type: 3}
+  activeCursor: {fileID: 0}
 --- !u!61 &7426463965011185063
 BoxCollider2D:
   m_ObjectHideFlags: 0

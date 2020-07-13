@@ -3155,6 +3155,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
         type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1365574995}
+    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
+        type: 3}
       propertyPath: buttons.Array.data[0]
       value: 
       objectReference: {fileID: 880408652}
@@ -3198,11 +3203,6 @@ PrefabInstance:
       propertyPath: buttons.Array.data[8]
       value: 
       objectReference: {fileID: 23201457}
-    - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
-        type: 3}
-      propertyPath: cameraTransform
-      value: 
-      objectReference: {fileID: 1365574995}
     - target: {fileID: 1917658742430658260, guid: 5e0e355b74f062840a1c7b80bbe3193e,
         type: 3}
       propertyPath: activeCursor
@@ -3362,6 +3362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: female_ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: endTime
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8983190408425965622, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
         type: 3}

@@ -17,8 +17,8 @@ public class Player : MonoBehaviour
 
     private bool canMove = true;
 
-    public Dictionary <string,bool>EmoteLearned;
-    public Dictionary <string,Button> buttons;
+    private Dictionary <string,bool>EmoteLearned;
+    private Dictionary <string,Button> buttons;
 
     // Update is called once per frame
     private void Start()
@@ -36,6 +36,17 @@ public class Player : MonoBehaviour
         if (canMove)
         {
             float velX = horizontalSpeed * Input.GetAxis("Horizontal");
+
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                this.transform.localScale = new Vector3(-1,1,1);
+            }
+            else if (Input.GetAxis("Horizontal") > 0)
+            {
+                this.transform.localScale = new Vector3(1, 1, 1);
+            }
+
+
             float velY = verticalSpeed * Input.GetAxis("Vertical") - verticalFall;
 
             if (this.transform.position.y > this.maxY)
@@ -96,7 +107,8 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        activePnj = collision.gameObject.GetComponent<Pnj>();
+        if(collision.gameObject.GetComponent<Pnj>() != null)
+            activePnj = collision.gameObject.GetComponent<Pnj>();
     }
 
     private void OnCollisionExit2D(Collision2D collision)

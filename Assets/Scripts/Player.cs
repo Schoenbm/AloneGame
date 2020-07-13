@@ -114,6 +114,10 @@ public class Player : MonoBehaviour
 
     public void learn(string pTag)
     {
+        if (!emoteLearned.ContainsKey(pTag))
+        {
+            return;
+        }
         if(!emoteLearned[pTag])
         {
             emoteLearned[pTag] = true;
@@ -124,13 +128,18 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.GetComponent<Pnj>() != null)
+        if (collision.gameObject.GetComponent<Pnj>() != null) {
             activePnj = collision.gameObject.GetComponent<Pnj>();
+            activePnj.transform.localScale = 1.1f * activePnj.transform.localScale;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (activePnj != null)
+        {
+            activePnj.transform.localScale = activePnj.transform.localScale / 1.1f;
             activePnj = null;
+        }
     }
 }

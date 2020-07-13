@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 22399069}
   m_Layer: 5
   m_Name: Dice
-  m_TagString: Untagged
+  m_TagString: dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 23201457}
   m_Layer: 5
   m_Name: Heart
-  m_TagString: Untagged
+  m_TagString: heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 118848128}
   m_Layer: 5
   m_Name: Gears
-  m_TagString: Untagged
+  m_TagString: gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 516348133}
   m_Layer: 5
   m_Name: Eye
-  m_TagString: Untagged
+  m_TagString: eye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 880408652}
   m_Layer: 5
   m_Name: Question
-  m_TagString: Untagged
+  m_TagString: question
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 1301042102}
   m_Layer: 5
   m_Name: Ear
-  m_TagString: Untagged
+  m_TagString: ear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 1428727226}
   m_Layer: 5
   m_Name: Happy
-  m_TagString: Untagged
+  m_TagString: happy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 1540664184}
   m_Layer: 5
   m_Name: Excla
-  m_TagString: Untagged
+  m_TagString: exclamation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 1934993182}
   m_Layer: 5
   m_Name: Dots
-  m_TagString: Untagged
+  m_TagString: dots
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

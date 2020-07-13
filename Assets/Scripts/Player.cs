@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject == activePnj.gameObject)
+        if (activePnj != null)
             activePnj = null;
     }
 }

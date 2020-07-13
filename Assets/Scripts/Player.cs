@@ -18,21 +18,22 @@ public class Player : MonoBehaviour
     private bool canMove = true;
 
     public Button[] buttons;
-    public GameObject[] Emotes;
+    public GameObject[] emotes;
 
-    private Dictionary<string, bool> EmoteLearned = new Dictionary<string, bool>();
+    private Dictionary<string, bool> emoteLearned = new Dictionary<string, bool>();
     private Dictionary<string, Button> buttonsDict = new Dictionary<string, Button>();
+    private Dictionary<string, GameObject> emotesDict = new Dictionary<string, GameObject>();
 
     // Update is called once per frame
     private void Start()
     {
-        buttonsDict.Add(Emotes[0].tag, buttons[0]);
-        EmoteLearned.Add(Emotes[0].tag, true);
+        buttonsDict.Add(emotes[0].tag, buttons[0]);
+        emoteLearned.Add(emotes[0].tag, true);
 
         for (int k = 1; k< buttons.Length; k++)
         {
-            buttonsDict.Add(Emotes[k].tag, buttons[k]);
-            EmoteLearned.Add(Emotes[k].tag, false);
+            buttonsDict.Add(emotes[k].tag, buttons[k]);
+            emoteLearned.Add(emotes[k].tag, false);
         }
 
     }
@@ -64,7 +65,7 @@ public class Player : MonoBehaviour
 
             if (Input.GetAxis("Submit") >0)
             {
-                foreach (KeyValuePair<string, bool> kvp in EmoteLearned)
+                foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
                     buttonsDict[kvp.Key].enabled = kvp.Value;
                     buttonsDict[kvp.Key].tag = kvp.Key;
@@ -76,7 +77,7 @@ public class Player : MonoBehaviour
         {
             if(Input.GetAxis("Cancel") > 0)
             {
-                foreach (KeyValuePair<string, bool> kvp in EmoteLearned)
+                foreach (KeyValuePair<string, bool> kvp in emoteLearned)
                 {
                     buttonsDict[kvp.Key].enabled = false;
                     buttonsDict[kvp.Key].tag = kvp.Key;
@@ -86,12 +87,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    void sendEmote(string pString, GameObject pEmote)
+    void sendEmote(string pString)
     {
         canMove = true;
-        GameObject emote = GameObject.Instantiate(pEmote,this.dialogueBox.transform);
+        GameObject emote = GameObject.Instantiate(this.emotesDict[pString],this.dialogueBox.transform);
         if(activePnj != null)
-            activePnj.answer(this, pEmote);
+            activePnj.answer(this, this.emotesDict[pString]);
         StartCoroutine(Wait(emote));
     }
 
@@ -104,9 +105,9 @@ public class Player : MonoBehaviour
 
     public void learn(string pTag)
     {
-        if(!EmoteLearned[pTag])
+        if(!emoteLearned[pTag])
         {
-            EmoteLearned[pTag] = true;
+            emoteLearned[pTag] = true;
             buttonsDict[pTag].enabled = true;
         }
     }

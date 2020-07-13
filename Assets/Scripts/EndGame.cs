@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class EndGame : MonoBehaviour
     public float timeEmoteGirl;
     public float timeBetweenEmote;
     public float timeBeforeBothEmotes;
+    public float endTime;
     public Rigidbody2D girlRb;
     public float speed;
 
@@ -50,6 +52,10 @@ public class EndGame : MonoBehaviour
 
         pPlayer.rb.velocity = new Vector2(speed,0);
         girlRb.velocity = new Vector2(speed,0);
+
+        yield return new WaitForSeconds(endTime);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 }

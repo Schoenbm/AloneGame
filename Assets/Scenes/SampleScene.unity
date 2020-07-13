@@ -592,12 +592,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
+  goodAnswer: exclamation
+  goodEmote: {fileID: 7917923768148658433, guid: 175a91c504cb7d94bac1128e0517140f,
+    type: 3}
+  badEmote: {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537,
+    type: 3}
+  dialogueBox: {fileID: 1420858406}
+  timeEmote: 3
   isGirl: 0
+--- !u!4 &141772812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8271072291909081230, guid: d1bccfc78551319439a63e6c2fcf48c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7000393955174107245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &199477884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1915406573674071867, guid: c925dac42a8f37846a3f9e2531fc4f13,
@@ -830,30 +838,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
+  goodAnswer: ear
+  goodEmote: {fileID: 621008201438225936, guid: fdec4e10ea2af5a41bde35f1f234b3d8,
+    type: 3}
+  badEmote: {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537,
+    type: 3}
+  dialogueBox: {fileID: 1140884052}
+  timeEmote: 3
   isGirl: 0
---- !u!114 &450326085
-MonoBehaviour:
+--- !u!61 &450326085
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450326083}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
-  isGirl: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
+  m_EdgeRadius: 0
+--- !u!4 &450326087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5681527967346541240, guid: 615b61cf80f7d054cb501328788e90c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8432219268114760883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481867298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,11 +1792,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  timeEmote: 0
+  goodAnswer: gear
+  goodEmote: {fileID: 8031498411038072522, guid: 45dfa06d2f790ba4782f928e4953257f,
+    type: 3}
+  badEmote: {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537,
+    type: 3}
+  dialogueBox: {fileID: 2126192727}
+  timeEmote: 3
   isGirl: 0
 --- !u!4 &1122417280 stripped
 Transform:
@@ -1804,6 +1830,36 @@ MonoBehaviour:
   dialogueBox: {fileID: 0}
   timeEmote: 0
   isGirl: 0
+--- !u!1 &1140884052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1140884053}
+  m_Layer: 0
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1140884053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140884052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.633, y: 0.253, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 450326087}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160583125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,12 +2036,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f95973a332cc47b5426a7870155cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodAnswer: 
-  goodEmote: {fileID: 0}
-  badEmote: {fileID: 0}
+  goodAnswer: eye
+  goodEmote: {fileID: 419487335003739686, guid: 51a0749ccb0333d4986f42ba6e0c4ffa,
+    type: 3}
+  badEmote: {fileID: 6174083424908474002, guid: 797d04e01e3daba4eb75aec6f5a7f537,
+    type: 3}
   dialogueBox: {fileID: 0}
-  timeEmote: 0
+  timeEmote: 3
   isGirl: 0
+--- !u!4 &1322267794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4476657657804126312, guid: b28554147e59a9243849359e1dbe27a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7977631918681355229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365574993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2095,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1917658742430658263}
+--- !u!1 &1420858406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420858407}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420858407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420858406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 0.174, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 141772812}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428727224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2381,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540664182}
   m_CullTransparentMesh: 0
+--- !u!1 &1608067222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1608067223}
+  m_Layer: 0
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1608067223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608067222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.347, y: 0.145, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322267794}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1934993180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,6 +2637,36 @@ MonoBehaviour:
   dialogueBox: {fileID: 0}
   timeEmote: 0
   isGirl: 0
+--- !u!1 &2126192727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126192728}
+  m_Layer: 0
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126192728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126192727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.277, y: 0.203, z: 0}
+  m_LocalScale: {x: 1.9934347, y: 1.9934347, z: 1.9934347}
+  m_Children: []
+  m_Father: {fileID: 101401826700732681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &101401826700732680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2597,6 +2751,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74886841f1ac79140b64f598529cef82, type: 3}
+--- !u!4 &101401826700732681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5738155757111442640, guid: 74886841f1ac79140b64f598529cef82,
+    type: 3}
+  m_PrefabInstance: {fileID: 101401826700732680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &101401826700732682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7565261149038524751, guid: 74886841f1ac79140b64f598529cef82,
+    type: 3}
+  m_PrefabInstance: {fileID: 101401826700732680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &101401826700732683
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101401826700732682}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.31}
+    newSize: {x: 0.25, y: 0.31}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.31}
+  m_EdgeRadius: 0
 --- !u!1001 &1259533912175091359
 PrefabInstance:
   m_ObjectHideFlags: 0

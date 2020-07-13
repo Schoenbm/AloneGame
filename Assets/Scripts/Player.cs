@@ -17,18 +17,24 @@ public class Player : MonoBehaviour
 
     private bool canMove = true;
 
+    public Button[] buttons;
+    public GameObject[] Emotes;
+
     private Dictionary <string,bool>EmoteLearned;
     private Dictionary <string,Button> buttonsDict;
 
     // Update is called once per frame
     private void Start()
     {
-        // Active les bouttons en fonctions de ceux appris de base
-        foreach (KeyValuePair<string,bool> kvp in EmoteLearned)
+        buttonsDict.Add(Emotes[0].tag, buttons[0]);
+        EmoteLearned.Add(Emotes[0].tag, true);
+
+        for (int k = 1; k< buttons.Length; k++)
         {
-            buttonsDict[kvp.Key].enabled = false;
-            buttonsDict[kvp.Key].tag = kvp.Key;
+            buttonsDict.Add(Emotes[k].tag, buttons[k]);
+            EmoteLearned.Add(Emotes[k].tag, false);
         }
+
     }
 
     void Update()

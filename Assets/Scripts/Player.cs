@@ -175,7 +175,7 @@ public class Player : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.GetComponent<Pnj>() != null) {
             activePnj = collision.gameObject.GetComponent<Pnj>();
-            activePnj.transform.localScale = 1.1f * activePnj.transform.localScale;
+            activePnj.transform.localScale = 1.05f * activePnj.transform.localScale;
         }
     }
 
@@ -183,7 +183,7 @@ public class Player : MonoBehaviour
     {
         if (activePnj != null)
         {
-            activePnj.transform.localScale = activePnj.transform.localScale / 1.1f;
+            activePnj.transform.localScale = activePnj.transform.localScale / 1.05f;
             activePnj = null;
         }
     }

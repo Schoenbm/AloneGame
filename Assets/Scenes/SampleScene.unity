@@ -2425,8 +2425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.12, y: 85.89}
-  m_SizeDelta: {x: 16.018074, y: 31.231133}
+  m_AnchoredPosition: {x: 52.11, y: 93.74}
+  m_SizeDelta: {x: 27.800102, y: 45.04461}
   m_Pivot: {x: 0.8475395, y: 0.56805736}
 --- !u!114 &1582070457
 MonoBehaviour:
@@ -3382,6 +3382,31 @@ PrefabInstance:
       propertyPath: endTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: timeBeforeRed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: timeEmotePlayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: timeEmoteGirl
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: timeBetweenEmote
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614255454844736538, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
+        type: 3}
+      propertyPath: timeBeforeBothEmotes
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8983190408425965622, guid: 9430feeaf28a1d14ba7aaf6d9243701b,
         type: 3}
       propertyPath: m_FlipX
@@ -3547,6 +3572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360021860479155718, guid: 4ed87d2f01052864cb7ff83555ff83e4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2159
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ed87d2f01052864cb7ff83555ff83e4, type: 3}

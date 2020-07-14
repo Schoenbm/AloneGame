@@ -9,6 +9,6 @@ public class Cursor : MonoBehaviour
     // Update is called once per frame
     public void changePosition(GameObject pEmote)
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(pEmote.GetComponent<RectTransform>().anchoredPosition.x, this.GetComponent<RectTransform>().anchoredPosition.y);
+        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(pEmote.GetComponent<RectTransform>().anchoredPosition.x + 10, this.GetComponent<RectTransform>().anchoredPosition.y);
     }
 }
